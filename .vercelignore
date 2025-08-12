@@ -1,0 +1,9 @@
+# Local and test-only files
+node_modules
+.next/cache
+.git
+tests
+playwright-report
+playwright.config.ts
+*.log
+*.zip
