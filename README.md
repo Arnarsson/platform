@@ -25,6 +25,48 @@ npm run dev
 
 Visit http://localhost:3000
 
+## Vercel Preview via CLI
+
+Use the built-in Vercel CLI scripts for preview and production deploys.
+
+1) Login and link project (one-time)
+
+```bash
+npm run vercel:login
+npm run vercel:link
+```
+
+2) Configure environment in Vercel Dashboard
+
+- Add `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` to your Vercel Project → Settings → Environment Variables for both Preview and Production.
+
+3) Pull Vercel env locally (optional but recommended)
+
+```bash
+npm run vercel:pull:preview
+# or for prod values
+npm run vercel:pull:prod
+```
+
+4) Deploy a preview
+
+```bash
+npm run vercel:preview
+# Returns a preview URL you can share
+```
+
+5) Promote to production
+
+```bash
+npm run vercel:prod
+```
+
+Local dev with Vercel env:
+
+```bash
+npm run vercel:dev
+```
+
 ## Included Routes
 
 Public:
@@ -85,4 +127,3 @@ npm run test:e2e
 - WCAG‑friendly focus styles and `prefers-reduced-motion` respected by default.
 - Tailwind configured for performance and minimal client JS.
 - Key components log mounts and guard decisions to aid debugging.
-
