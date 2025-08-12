@@ -1,4 +1,4 @@
-import { auth, currentUser, redirectToSignIn } from "@clerk/nextjs";
+import { auth, currentUser, redirectToSignIn } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
 export type Role = "admin" | "teacher" | "student";

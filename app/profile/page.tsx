@@ -1,5 +1,5 @@
 import { requireSignedIn } from "@/lib/auth/roles";
-import { currentUser } from "@clerk/nextjs";
+import { currentUser } from "@clerk/nextjs/server";
 
 export default async function ProfilePage() {
   await requireSignedIn();
@@ -13,4 +13,3 @@ export default async function ProfilePage() {
     </div>
   );
 }
-
