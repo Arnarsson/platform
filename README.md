@@ -1,4 +1,4 @@
-# HARKA — Next.js + Clerk + i18n Starter
+# HARKA — Next.js + Clerk + i18n Starter 🚀
 
 Production‑ready starter with App Router (TypeScript), Tailwind, Clerk auth, role gating (admin/teacher/student), i18n (da/en), theme toggle, and Playwright tests.
 
