@@ -26,13 +26,7 @@ const isProtectedRoute = createRouteMatcher([
 ]);
 
 export default clerkMiddleware(async (auth, req: NextRequest) => {
-  // First handle i18n routing
-  const i18nResponse = handleI18n(req);
-  if (i18nResponse) {
-    return i18nResponse;
-  }
-
-  // Then handle auth for protected routes
+  // Handle auth for protected routes first
   const { userId, sessionId } = await auth();
   const url = req.nextUrl.pathname;
   const protectedHit = isProtectedRoute(req);
@@ -61,6 +55,12 @@ export default clerkMiddleware(async (auth, req: NextRequest) => {
       const profilePath = locale === 'da' ? '/da/profil' : '/en/profile';
       return Response.redirect(new URL(profilePath, req.url));
     }
+  }
+
+  // Handle i18n routing after auth checks
+  const i18nResponse = handleI18n(req);
+  if (i18nResponse) {
+    return i18nResponse;
   }
 });
 
