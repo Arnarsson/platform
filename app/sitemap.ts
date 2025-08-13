@@ -1,9 +1,8 @@
 import {MetadataRoute} from 'next';
-import {routing} from '@/src/i18n/routing';
 
 const host = 'https://www.ethos-ai.cc';
+const locales = ['en', 'da'];
 
-// Basic sitemap without localized pathnames for now
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     '/',
@@ -26,11 +25,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return pages.flatMap((path) =>
-    routing.locales.map((locale) => ({
+    locales.map((locale) => ({
       url: `${host}/${locale}${path}`,
       alternates: {
         languages: Object.fromEntries(
-          routing.locales.map((l) => [l, `${host}/${l}${path}`])
+          locales.map((l) => [l, `${host}/${l}${path}`])
         )
       },
       lastModified: new Date(),
