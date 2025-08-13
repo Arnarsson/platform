@@ -1,0 +1,170 @@
+{
+  "Meta": {
+    "title": "HARKA - AI Governance Platform",
+    "description": "Ansvarlig AI, som jeres teams faktisk kan levere. Praktiske frameworks, træning og værktøjer mappet til jeres standarder."
+  },
+  "Navigation": {
+    "home": "Hjem",
+    "learn": "Lær",
+    "teach": "Undervis",
+    "admin": "Admin",
+    "profile": "Profil",
+    "signIn": "Log Ind",
+    "signOut": "Log Ud",
+    "bookDemo": "Book Demo",
+    "pricing": "Priser",
+    "company": "Om Os",
+    "contact": "Kontakt"
+  },
+  "Homepage": {
+    "title": "Ansvarlig AI, som jeres teams faktisk kan levere",
+    "subtitle": "Praktiske frameworks, træning og værktøjer mappet til jeres standarder—så I går fra slides til leverede kontroller på uger.",
+    "getStarted": "Kom i Gang",
+    "pricing": "Priser",
+    "learn": {
+      "title": "Lær",
+      "description": "Strukturerede kurser og AI governance vejledning.",
+      "cta": "AI Kompas"
+    },
+    "teach": {
+      "title": "Undervis",
+      "description": "Upload lektioner og administrer læringsgrupper.",
+      "cta": "Dashboard"
+    },
+    "community": {
+      "title": "Fællesskab",
+      "description": "Live sessioner og kollaborativ praksis.",
+      "cta": "Power Hour"
+    }
+  },
+  "Learn": {
+    "title": "AI Governance, Afmystificeret",
+    "subtitle": "Praktiske guider, playbooks og værktøjer til at implementere ansvarlig AI i jeres organisation.",
+    "dashboard": "Dashboard",
+    "courses": "Kurser", 
+    "aiCompass": "AI Kompas",
+    "getStarted": "Kom i Gang",
+    "readingTime": "min læsning",
+    "filters": {
+      "all": "Alle",
+      "topic": "Emne",
+      "role": "Rolle",
+      "format": "Format",
+      "guide": "Guide",
+      "playbook": "Playbook",
+      "webinar": "Webinar"
+    }
+  },
+  "Admin": {
+    "title": "Admin Dashboard",
+    "quickAccess": "Hurtig Adgang",
+    "users": "Brugere",
+    "content": "Indhold",
+    "courses": "Kurser",
+    "analytics": "Analytik",
+    "settings": "Indstillinger"
+  },
+  "Teach": {
+    "title": "Undervisnings Dashboard",
+    "upload": "Upload Indhold",
+    "manageCourses": "Administrer Kurser",
+    "studentProgress": "Studerendes Fremskridt",
+    "analytics": "Analytik"
+  },
+  "Profile": {
+    "title": "Profil",
+    "settings": "Indstillinger",
+    "preferences": "Præferencer",
+    "security": "Sikkerhed"
+  },
+  "Auth": {
+    "signIn": "Log Ind",
+    "signUp": "Tilmeld Dig",
+    "signOut": "Log Ud",
+    "welcome": "Velkommen tilbage!",
+    "getStarted": "Kom i gang med HARKA"
+  },
+  "Forms": {
+    "name": "Navn",
+    "email": "Arbejdsmail",
+    "company": "Virksomhed",
+    "role": "Rolle",
+    "message": "Besked",
+    "submit": "Indsend",
+    "send": "Send",
+    "save": "Gem",
+    "cancel": "Annuller",
+    "required": "Påkrævet",
+    "invalidEmail": "Brug venligst din arbejdsmail (ingen private domæner)",
+    "consent": "Vi bruger dine oplysninger til at besvare denne henvendelse. Privatlivspolitik.",
+    "success": "Tak—vælg et tidspunkt på næste skærm.",
+    "error": "Noget gik galt. Prøv venligst igen."
+  },
+  "Common": {
+    "loading": "Indlæser...",
+    "save": "Gem",
+    "cancel": "Annuller",
+    "delete": "Slet",
+    "edit": "Rediger",
+    "view": "Vis",
+    "back": "Tilbage", 
+    "next": "Næste",
+    "previous": "Forrige",
+    "search": "Søg",
+    "filter": "Filter",
+    "clear": "Ryd",
+    "close": "Luk",
+    "open": "Åbn"
+  },
+  "Pricing": {
+    "title": "Vælg Din Plan",
+    "starter": {
+      "title": "Starter",
+      "subtitle": "Perfekt til pilotprojekter",
+      "price": "Gratis", 
+      "features": ["1 team", "Grundlæggende playbooks", "Email support"]
+    },
+    "team": {
+      "title": "Team",
+      "subtitle": "Mest populær",
+      "price": "699 kr/måned",
+      "features": ["Flere teams", "SSO integration", "Prioriteret support", "Avanceret analytik"]
+    },
+    "enterprise": {
+      "title": "Enterprise",
+      "subtitle": "For store organisationer",
+      "price": "Tilpasset",
+      "features": ["Ubegrænsede teams", "DPA & compliance", "SAML/SCIM", "Dedikeret support"]
+    },
+    "getStarted": "Kom i Gang",
+    "contactSales": "Kontakt Salg"
+  },
+  "Errors": {
+    "404": {
+      "title": "Side Ikke Fundet",
+      "message": "Den side du leder efter eksisterer ikke.",
+      "backHome": "Tilbage til Hjem"
+    },
+    "403": {
+      "title": "Adgang Nægtet",
+      "message": "Du har ikke tilladelse til at tilgå denne side.",
+      "backHome": "Tilbage til Hjem"
+    },
+    "500": {
+      "title": "Server Fejl",
+      "message": "Noget gik galt hos os.",
+      "tryAgain": "Prøv Igen"
+    }
+  },
+  "Theme": {
+    "toggleTheme": "Skift tema",
+    "light": "Lys",
+    "dark": "Mørk", 
+    "system": "System"
+  },
+  "Language": {
+    "toggleLanguage": "Skift sprog",
+    "english": "Engelsk",
+    "danish": "Dansk"
+  }
+}

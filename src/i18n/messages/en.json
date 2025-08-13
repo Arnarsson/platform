@@ -1,0 +1,170 @@
+{
+  "Meta": {
+    "title": "HARKA - AI Governance Platform",
+    "description": "Responsible AI your teams can actually ship. Practical frameworks, training & tools mapped to your standards."
+  },
+  "Navigation": {
+    "home": "Home",
+    "learn": "Learn",
+    "teach": "Teach", 
+    "admin": "Admin",
+    "profile": "Profile",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "bookDemo": "Book Demo",
+    "pricing": "Pricing",
+    "company": "Company",
+    "contact": "Contact"
+  },
+  "Homepage": {
+    "title": "Responsible AI your teams can actually ship",
+    "subtitle": "Practical frameworks, training & tools mapped to your standards—so you move from slides to shipped controls in weeks.",
+    "getStarted": "Get Started",
+    "pricing": "Pricing",
+    "learn": {
+      "title": "Learn",
+      "description": "Structured courses and AI governance guidance.",
+      "cta": "AI Compass"
+    },
+    "teach": {
+      "title": "Teach",
+      "description": "Upload lessons and manage learning cohorts.",
+      "cta": "Dashboard"
+    },
+    "community": {
+      "title": "Community", 
+      "description": "Live sessions and collaborative practice.",
+      "cta": "Power Hour"
+    }
+  },
+  "Learn": {
+    "title": "AI Governance, De-jargonized",
+    "subtitle": "Practical guides, playbooks, and tools to implement responsible AI in your organization.",
+    "dashboard": "Dashboard",
+    "courses": "Courses",
+    "aiCompass": "AI Compass",
+    "getStarted": "Get Started",
+    "readingTime": "min read",
+    "filters": {
+      "all": "All",
+      "topic": "Topic",
+      "role": "Role", 
+      "format": "Format",
+      "guide": "Guide",
+      "playbook": "Playbook",
+      "webinar": "Webinar"
+    }
+  },
+  "Admin": {
+    "title": "Admin Dashboard",
+    "quickAccess": "Quick Access",
+    "users": "Users",
+    "content": "Content", 
+    "courses": "Courses",
+    "analytics": "Analytics",
+    "settings": "Settings"
+  },
+  "Teach": {
+    "title": "Teaching Dashboard",
+    "upload": "Upload Content",
+    "manageCourses": "Manage Courses",
+    "studentProgress": "Student Progress",
+    "analytics": "Analytics"
+  },
+  "Profile": {
+    "title": "Profile",
+    "settings": "Settings",
+    "preferences": "Preferences",
+    "security": "Security"
+  },
+  "Auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "welcome": "Welcome back!",
+    "getStarted": "Get started with HARKA"
+  },
+  "Forms": {
+    "name": "Name",
+    "email": "Work Email", 
+    "company": "Company",
+    "role": "Role",
+    "message": "Message",
+    "submit": "Submit",
+    "send": "Send",
+    "save": "Save",
+    "cancel": "Cancel",
+    "required": "Required",
+    "invalidEmail": "Please use your work email (no personal domains)",
+    "consent": "We'll use your info to respond to this request. Privacy policy.",
+    "success": "Thanks—pick a time on the next screen.",
+    "error": "Something went wrong. Please try again."
+  },
+  "Common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "close": "Close",
+    "open": "Open"
+  },
+  "Pricing": {
+    "title": "Choose Your Plan",
+    "starter": {
+      "title": "Starter",
+      "subtitle": "Perfect for pilot projects",
+      "price": "Free",
+      "features": ["1 team", "Core playbooks", "Email support"]
+    },
+    "team": {
+      "title": "Team", 
+      "subtitle": "Most popular",
+      "price": "$99/month",
+      "features": ["Multiple teams", "SSO integration", "Priority support", "Advanced analytics"]
+    },
+    "enterprise": {
+      "title": "Enterprise",
+      "subtitle": "For large organizations", 
+      "price": "Custom",
+      "features": ["Unlimited teams", "DPA & compliance", "SAML/SCIM", "Dedicated support"]
+    },
+    "getStarted": "Get Started",
+    "contactSales": "Contact Sales"
+  },
+  "Errors": {
+    "404": {
+      "title": "Page Not Found",
+      "message": "The page you're looking for doesn't exist.",
+      "backHome": "Back to Home"
+    },
+    "403": {
+      "title": "Access Denied",
+      "message": "You don't have permission to access this page.",
+      "backHome": "Back to Home"
+    },
+    "500": {
+      "title": "Server Error",
+      "message": "Something went wrong on our end.",
+      "tryAgain": "Try Again"
+    }
+  },
+  "Theme": {
+    "toggleTheme": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "Language": {
+    "toggleLanguage": "Toggle language",
+    "english": "English",
+    "danish": "Danish"
+  }
+}
