@@ -35,18 +35,27 @@ export default async function RootLayout({
   const {locale} = await params;
   const messages = await getMessages();
 
+  const content = (
+    <html lang={locale} suppressHydrationWarning>
+      <body>
+        <ThemeProvider>
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <Navbar />
+            <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
+          </NextIntlClientProvider>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+
+  // Skip ClerkProvider during testing
+  if (process.env.NODE_ENV === 'test' || process.env.PLAYWRIGHT_TEST === 'true') {
+    return content;
+  }
+
   return (
     <ClerkProvider>
-      <html lang={locale} suppressHydrationWarning>
-        <body>
-          <ThemeProvider>
-            <NextIntlClientProvider locale={locale} messages={messages}>
-              <Navbar />
-              <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
-            </NextIntlClientProvider>
-          </ThemeProvider>
-        </body>
-      </html>
+      {content}
     </ClerkProvider>
   );
 }

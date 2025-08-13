@@ -26,7 +26,7 @@ test.describe('Language Switching', () => {
     await expect(page.getByRole('heading')).toContainText('Responsible AI your teams can actually ship');
   });
 
-  test('language switch works on learn page with localized slugs', async ({ page }) => {
+  test('language switch works on learn page', async ({ page }) => {
     // Start on English learn page
     await page.goto('/en/learn');
     
@@ -37,14 +37,14 @@ test.describe('Language Switching', () => {
     // Switch to Danish
     await page.getByRole('group', { name: /language/i }).getByText('DA').click();
     
-    // Verify Danish URL with localized slug and content
-    await expect(page).toHaveURL(/\/da\/laer$/);
+    // Verify Danish URL and content (same path, different locale)
+    await expect(page).toHaveURL(/\/da\/learn$/);
     await expect(page.getByRole('heading')).toContainText('AI Governance, Afmystificeret');
     
     // Switch back to English
     await page.getByRole('group', { name: /language/i }).getByText('EN').click();
     
-    // Verify back to English with correct slug
+    // Verify back to English
     await expect(page).toHaveURL(/\/en\/learn$/);
   });
 

@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import path from 'path';
 
 export default defineConfig({
   testDir: './tests',
@@ -8,6 +9,10 @@ export default defineConfig({
     url: 'http://localhost:3000',
     reuseExistingServer: !process.env.CI,
     cwd: process.cwd(),
+    env: {
+      PLAYWRIGHT_TEST: 'true',
+      NODE_ENV: 'test',
+    },
   },
   use: {
     baseURL: 'http://localhost:3000',

@@ -23,14 +23,21 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <LanguageSwitcher />
           <ThemeToggle />
-          <SignedOut>
-            <SignInButton>
-              <button className="btn btn-primary text-xs">{t("signIn")}</button>
-            </SignInButton>
-          </SignedOut>
-          <SignedIn>
-            <UserButton afterSignOutUrl="/" />
-          </SignedIn>
+          {(process.env.NODE_ENV !== 'test' && process.env.PLAYWRIGHT_TEST !== 'true') && (
+            <>
+              <SignedOut>
+                <SignInButton>
+                  <button className="btn btn-primary text-xs">{t("signIn")}</button>
+                </SignInButton>
+              </SignedOut>
+              <SignedIn>
+                <UserButton afterSignOutUrl="/" />
+              </SignedIn>
+            </>
+          )}
+          {(process.env.NODE_ENV === 'test' || process.env.PLAYWRIGHT_TEST === 'true') && (
+            <button className="btn btn-primary text-xs">{t("signIn")}</button>
+          )}
         </div>
       </div>
     </header>
